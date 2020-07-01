@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cti.com.androidmonitor.widget.CustomProgressBar
+        android:paddingTop="30dp"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        custom:colorBar_progress="@color/colorPrimary"
+        custom:colorBar="@color/lightGray"
+        custom:colorBar_text="@color/darkOrange"
+        custom:smallText="MFlops"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/customProgressBar"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:text="Linpack test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/darkOrange"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_weight="1"
+        android:id="@+id/startTest_button"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="174dp"
+        android:layout_marginEnd="174dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</LinearLayout>

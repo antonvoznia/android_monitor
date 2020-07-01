@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cti.com.androidmonitor.widget.CustomProgressBar
+        android:paddingTop="30dp"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        custom:colorBar_progress="@color/colorPrimary"
+        custom:colorBar="@color/lightGray"
+        custom:colorBar_text="@color/darkOrange"
+        custom:smallText="MFlops"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/customProgressBar"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/startTest_button"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
